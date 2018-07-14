@@ -1,0 +1,89 @@
+body * {
+	box-sizing: border-box;
+}
+h1 {
+	color: red;
+}
+img {
+	height: 80px;
+	width: 50px;
+}
+
+div {
+	margin: 10 5 5 5;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.left {
+	overflow-y: auto;
+	border: 2px solid green;
+	max-height: 600px;
+	min-width: 470px;
+}
+
+.right {
+	overflow-y: auto;
+	border: 2px solid red;
+	max-height: 600px;
+	min-width: 450px;
+}
+.item {
+	overflow: hidden;
+	display: flex;
+	border: 1px solid;
+	justify-content: space-between;
+}
+
+.title span {
+	display: flex;
+	min-width: 335px;
+}
+
+.item .before {
+	margin: 5px;
+	flex: none;
+	order: -1;
+	cursor: pointer;
+	padding: 35px 0;
+    text-align: center;
+}
+.item .before::before {
+	content: "◁";
+}
+
+.item .before:hover::before {
+	content: "◀";
+}
+
+.item .after {
+	margin: 5px;
+	flex: none;
+    text-align: center;
+	cursor: pointer;
+	padding: 35px 0;
+}
+.item .after::after {
+	content: "▷";
+}
+
+.item .after:hover::after {
+	content: "▶";
+}
+
+.hide {
+	display: none;
+}
+
+.counter {
+	width: 100%;
+	padding: 5px;
+	background-color: #D3D3D3;
+}
+
+.addBookForm{
+	margin-left: 120px;
+}

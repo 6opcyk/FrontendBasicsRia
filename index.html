@@ -1,0 +1,38 @@
+<head>
+	<meta charset="utf-8">
+	<title>Список книг</title>
+	<link rel="shortcut icon" href="/static/book.png">
+	<link rel="stylesheet" href="/init.css">
+</head>
+<body>
+	<h1>Books I like</h1>
+	<div class="content">
+		<div style="width: 100%">
+			<input type="text" placeholder="Автор..." id = "searchField"></input>
+		</div>
+		<div class="left">
+			<div class = "counter">
+				
+			</div>
+		</div>
+		<div class="right">
+			<div class = "counter">
+				
+			</div>
+		</div>
+		<form onsubmit="addBook()" class = "addBookForm">
+			<h3>Добавить книгу:</h3>
+			<div>
+				<input type="text" placeholder="Автор..." id = "searchField"></input>
+			</div>
+			<div>
+				<input type="text" placeholder="Название..." id = "searchField"></input>
+			</div>
+			<div>
+				<input type="text" placeholder="Ссылка на изображение" id = "searchField"></input>
+			</div>
+			<input TYPE="button" Value="Click" onClick="addBook(this.form)">
+		</form>	
+	</div>
+<script type="text/javascript" src="/index.js"> </script>
+</body>
